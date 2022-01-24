@@ -13,6 +13,15 @@ while i < arr.length
     i+=1
 end
 
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
+    p arr[i]
+    i+=1
+end
+
 #----------------
 # B
 p :B
@@ -25,6 +34,17 @@ end
 
 i = 0
 while i < arr.length
+    if (arr[i] != 5 && arr[i] != 6) 
+        p arr[i]
+    end
+    i+=1
+end
+
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
     if (arr[i] != 5 && arr[i] != 6) 
         p arr[i]
     end
@@ -50,6 +70,17 @@ while i < arr.length
     i+=1
 end
 
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
+    if (arr[i] < 6) 
+        p arr[i]
+    end
+    i+=1
+end
+
 #----------------
 # D
 p :D
@@ -62,6 +93,17 @@ end
 
 i = 0
 while i < arr.length
+    if (arr[i].even?) 
+        p arr[i]
+    end
+    i+=1
+end
+
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
     if (arr[i].even?) 
         p arr[i]
     end
@@ -86,6 +128,17 @@ while i < arr.length
     i+=1
 end
 
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
+    if (arr[i].odd?) 
+        p arr[i]
+    end
+    i+=1
+end
+
 #----------------
 # F
 p :F
@@ -104,6 +157,17 @@ while i < arr.length
     i+=1
 end
 
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
+    if (arr[i] >= 2 && arr[i] <= 9) 
+        p arr[i]
+    end
+    i+=1
+end
+
 #----------------
 # G
 p :G
@@ -114,6 +178,15 @@ end
 
 i = 0
 while i < arr.length
+    p arr[i].to_s + (arr[i].even? ? " even" : " odd") 
+    i+=1
+end
+
+i = 0
+loop do
+    if i >= arr.length
+        break
+    end
     p arr[i].to_s + (arr[i].even? ? " even" : " odd") 
     i+=1
 end
